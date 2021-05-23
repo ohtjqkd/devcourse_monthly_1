@@ -7,11 +7,7 @@ from dash.dependencies import Input, Output
 # app = Flask(__name__)
 
 template_path = "./templates/"
-
-@app.route('/')
-def get_index():
-    
-    return render_template(template_name_or_list=template_path+'index.html')
+web_app = Flask(__name__)
 
 df = px.data.iris()
 
@@ -40,10 +36,14 @@ def update_bar_chart(slider_range):
         hover_data=['petal_width'])
     return fig
 
+@web_app.route('/')
+def get_index():
+    
+    return render_template(template_name_or_list=template_path+'index.html')
 
 
 
 
 
-if __name__ == '__main__':
-    app.run('0.0.0.0', port=8080, debug=True)
+# if __name__ == '__main__':
+#     app.run('0.0.0.0', port=8080, debug=True)
