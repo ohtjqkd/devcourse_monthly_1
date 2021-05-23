@@ -1,6 +1,6 @@
-import flask.config as conf
+# import flask.config as conf
 
-class DevelopmentConfig(conf.Config):
-    DEBUG = True
+# class DevelopmentConfig(conf.Config):
+#     DEBUG = True
 
 
