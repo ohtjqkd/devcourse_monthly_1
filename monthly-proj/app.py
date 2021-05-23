@@ -7,6 +7,7 @@ app.debug = True
 
 @app.route('/')
 def get_index():
+    
     return 'hi'
 
 
