@@ -1,0 +1,6 @@
+2021VAERSData filter=lfs diff=lfs merge=lfs -text
+2021VAERSData/* filter=lfs diff=lfs merge=lfs -text
+2021VAERSData/my_vaers.csv filter=lfs diff=lfs merge=lfs -text
+2021VAERSData/2021VAERSDATA.csv filter=lfs diff=lfs merge=lfs -text
+my_vaers.csv filter=lfs diff=lfs merge=lfs -text
+2021VAERSDATA.csv filter=lfs diff=lfs merge=lfs -text
