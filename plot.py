@@ -1,15 +1,3 @@
-import json
-import os
-from datetime import datetime
-
-import numpy as np
-import pandas as pd
-import plotly
-import plotly.express as px
-import plotly.graph_objs as go
-
-PATH = os.path.dirname(os.path.abspath(__file__))
-
-def draw_strip():
-    DF = pd.read_csv(os.path.join(PATH, '2021VAERSData', 'my_vaers.csv'))
-    px.strip(DF, x='')
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc6b9b11519adcd4a10ebb3555342e2719a4dcb3aa973b7facd72f00b797e071
+size 648
